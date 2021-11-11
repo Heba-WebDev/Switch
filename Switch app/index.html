@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b0cb6f0851.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Document</title>
+</head>
+<body class="grid"> 
+    
+<main class="main grid">
+
+    <section class="title-container">
+        <h1 class="uppercase text-white title">Switch <span class="fas fa-calculator"></span></h1>
+        <p>Press the arrow to convert to an intger. In case you want to reset the app, press the button at the bottom right of the page.</p>
+    </section>
+
+
+    <aside class="cal-container flex">
+        <div class="change">
+            <input type="text" placeholder="Hexadecimal" class="btn" id="hex" style="text-align: center;"> 
+        <span class="fas fa-angle-double-right" id="hex-click"></span>
+        <input type="text" class="btn" readonly id="intgerHex">
+        </div>
+
+
+        <div class="change">
+            <input type="text" placeholder="Octal" class="btn" id="octal" style="text-align: center;"> 
+        <span class="fas fa-angle-double-right" id="oct-click"></span>
+        <input type="text" class="btn" readonly id="intgerOct">
+        </div>
+
+
+        <div class="change">
+            <input type="text" placeholder="Binary" class="btn" id="binary" style="text-align: center;"> 
+        <span class="fas fa-angle-double-right" id="bin-click"></span>
+        <input type="text" class="btn" readonly id="intgerBin">
+        </div>
+
+        
+    </aside>
+
+    <span class="far fa-stop-circle"></span>
+</main>
+
+<script src="sandbox.js"></script>    
+</body>
+</html>
